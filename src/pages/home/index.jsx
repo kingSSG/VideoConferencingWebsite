@@ -9,10 +9,11 @@ const Homepage = () => {
 
     },[navigate,value])
     return (<div>
-        <input value={value} 
+        <input  value={value} 
         onChange={ (e) =>setValue(e.target.value) }
         type="text" placeholder="enter room code"/>
-        <button onClick={handleJoinRoom}>join now</button>
+        <br />
+        <button  onClick={handleJoinRoom}>join now</button>
     </div>
     );
 }
